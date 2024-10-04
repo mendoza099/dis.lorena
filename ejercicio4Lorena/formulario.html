@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 70%;
+            margin: 0 auto;
+        }
+        fieldset {
+            border: 2px solid black;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .section1 {
+            background-color: #8a6e9f;
+        }
+        .section2 {
+            background-color: #708090;
+        }
+        .section3 {
+            background-color: #688e67;
+        }
+        .button-container {
+            text-align: center;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ddd;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <fieldset class="section1">
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni"><br>
+            <label for="lugar">Lugar de Nacimiento:</label>
+            <input type="text" id="lugar" name="lugar">
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+                <option value="Cáceres">Cáceres</option>
+            </select><br>
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha"><br>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion"><br>
+            <label for="codigo">Código Postal:</label>
+            <input type="text" id="codigo" name="codigo">
+        </fieldset>
+
+        <fieldset class="section2">
+            <legend>Forma de Acceso</legend>
+            <label><input type="radio" name="acceso" value="directo">Directo</label><br>
+            <label><input type="radio" name="acceso" value="bachillerato">Bachillerato</label>
+            <input type="text" name="bachillerato"><br>
+            <label><input type="radio" name="acceso" value="universidad">Universidad</label>
+            <input type="text" name="universidad"><br>
+            <label><input type="radio" name="acceso" value="grado-medio">Grado Medio</label>
+            <input type="text" name="grado-medio"><br>
+            <label><input type="radio" name="acceso" value="otros">Otros (especifique)</label>
+            <input type="text" name="otros"><br>
+            <label><input type="radio" name="acceso" value="prueba-libre">Prueba Libre</label>
+        </fieldset>
+
+        <fieldset class="section3">
+            <legend>Documentos Adjuntados</legend>
+            <label><input type="checkbox" name="documentos" value="fotocopia-dni">Fotocopia DNI</label>
+            <label><input type="checkbox" name="documentos" value="certificado-academico">Certificado Académico</label><br>
+            <label><input type="checkbox" name="documentos" value="otros-documentos">Otros documentos (especifique)</label>
+            <input type="text" name="otros-documentos">
+        </fieldset>
+
+        <div class="button-container">
+            <input type="submit" value="Enviar Solicitud">
+        </div>
+    </form>
+
+</body>
+</html>
