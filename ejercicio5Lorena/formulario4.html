@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos4.css">
+    <title>Registro en la Escuela</title>
+</head>
+<body>
+    <form >
+        <fieldset class="section1">
+            <legend>Registro Escolar</legend>
+            
+            <label for="matricula">Número de Matrícula (M001 - M999):</label>
+            <input type="text" id="matricula" name="matricula" pattern="^M\d{3}$" required placeholder="Ej: M001">
+
+            <label for="materias">Materias:</label>
+            <label class="checkbox-container"><input type="checkbox" name="documentos" value="Matemáticas">Matemáticas</label>
+            <label class="checkbox-container"><input type="checkbox" name="documentos" value="Algoritmia">Algoritmia</label><br>
+            <label class="checkbox-container"><input type="checkbox" name="documentos" value="Sistemas">Sistemas</label>
+            <label class="checkbox-container"><input type="checkbox" name="documentos" value="Robótica">Robótica</label>
+
+        </fieldset>
+
+        <div class="button-container">
+            <input type="submit" value="Enviar Solicitud">
+        </div>
+    </form>
+</body>
+</html>

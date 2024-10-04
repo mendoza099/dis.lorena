@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url(https://res.cloudinary.com/dzrp12vse/image/upload/v1728054886/DALL_E_2024-10-04_17.13.44_-_A_serene_scene_of_a_ship_or_ferry_on_the_ocean_with_calm_blue_waters_and_a_clear_sky_at_sunset._In_the_background_there_are_gentle_waves_and_a_dista_noa8do.webp);
+
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(https://res.cloudinary.com/dzrp12vse/image/upload/v1728054886/DALL_E_2024-10-04_17.13.44_-_A_serene_scene_of_a_ship_or_ferry_on_the_ocean_with_calm_blue_waters_and_a_clear_sky_at_sunset._In_the_background_there_are_gentle_waves_and_a_dista_noa8do.webp);
+}
+
+
+fieldset {
+    border: 2px solid #6C63FF;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #6C63FF;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    text-align: center;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #6C63FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5A55D8;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
