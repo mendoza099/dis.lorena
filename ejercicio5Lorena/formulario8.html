@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Frutas</title>
+    <link rel="stylesheet" href="estilos8.css"> 
+</head>
+<body>
+
+    <h1>Compra de Frutas Online</h1>
+
+    <form method="get" action="URL_DEL_SERVIDOR">
+        <label for="frutas">Frutas</label>
+        <select id="frutas" name="frutas" required>
+            <option value="manzanas">Manzanas</option>
+            <option value="naranjas">Naranjas</option>
+            <option value="mandarinas">Mandarinas</option>
+        </select>
+
+        <label for="cantidad">Cantidad (ejemplo: 1 ud, 2 kg, 100 gr)</label>
+        <input type="text" id="cantidad" name="cantidad" required placeholder="Número y unidad (ej. 1 ud)">
+
+        <div class="button-container">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+</body>
+</html>

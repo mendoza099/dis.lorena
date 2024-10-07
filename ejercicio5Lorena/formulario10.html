@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="estilos10.css"> 
+</head>
+<body>
+
+    <h1>Formulario de Registro</h1>
+
+    <form method="get" action="URL_DEL_SERVIDOR">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="nombre">
+<br>
+<br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="mail">
+        <br>
+        <br>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Su teléfono">
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Lenguajes que conoce</legend>
+            <label>
+                <input type="checkbox" name="lenguajes" value="JavaScript" checked> JavaScript
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="lenguajes" value="PHP"> PHP
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="lenguajes" value="NodeJS"> NodeJS
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="lenguajes" value="Python"> Python
+            </label>
+        </fieldset>
+
+        <br>
+        
+            <legend>Nivel de Inglés</legend>
+            <label>
+                <input type="radio" name="nivel_ingles" value="bajo" required>Bajo
+            </label>
+            <br>
+
+            <label>
+                <input type="radio" name="nivel_ingles" value="medio">Medio
+            </label>
+            <br>
+
+            <label>
+                <input type="radio" name="nivel_ingles" value="alto">Alto
+            </label>
+        
+
+        <div class="button-container">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+</body>
+</html>

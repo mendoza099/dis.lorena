@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro en sitio web</title>
+    <link rel="stylesheet" href="estilos7.css"> 
+</head>
+<body>
+
+    <h1>Registro en sitio web</h1>
+
+    <form method="post" action="URL_DEL_SERVIDOR">
+        <label for="nombre">Álias</label>
+        <br>
+
+        <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+        <br>
+        <label for="personas">E-mail</label>
+        <br>
+
+        <input type="text" id="E-mail" name="E-mail" required min="1" placeholder="E-mail">
+        <br>
+
+        <label for="personas">Teléfono</label>
+        <br>
+
+        <input type="number" id="Teléfono" name="Teléfono" required min="1" placeholder="Teléfono">
+
+        <br>
+        <br>
+
+        <div class="button-container">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+</body>
+</html>

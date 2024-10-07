@@ -3,8 +3,6 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
-    background-image: url(https://res.cloudinary.com/dzrp12vse/image/upload/v1728055716/DALL_E_2024-10-04_17.28.25_-_A_vibrant_and_dynamic_scene_for_a_bicycle_store_website_background._The_image_features_sleek_and_modern_bicycles_displayed_outdoors_on_a_bright_sunny_eu7vf2.webp);
-
 }
 
 form {
@@ -15,9 +13,7 @@ form {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-image: url(https://res.cloudinary.com/dzrp12vse/image/upload/v1728055716/DALL_E_2024-10-04_17.28.25_-_A_vibrant_and_dynamic_scene_for_a_bicycle_store_website_background._The_image_features_sleek_and_modern_bicycles_displayed_outdoors_on_a_bright_sunny_eu7vf2.webp);
 }
-
 
 fieldset {
     border: 2px solid #6C63FF;
@@ -33,16 +29,18 @@ legend {
 }
 
 label {
+    display: block;
     margin-bottom: 5px;
     color: #333;
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="tel"],
+input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #a3a0a0;
     border-radius: 5px;
     box-sizing: border-box;
 }
