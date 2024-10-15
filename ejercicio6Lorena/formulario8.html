@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcularIVA() {
+            const precio = parseFloat(document.getElementById('precio').value);
+            const iva = parseFloat(document.getElementById('iva').value);
+            const precioConIVA = (precio * (1 + iva)).toFixed(2);
+    
+            document.getElementById('resultado').value = precioConIVA;
+        }
+    </script>
+</head>
+<body>
+
+
+    <form>
+        <label for="precio">Precio (€):</label>
+        <input type="number" step="0.01" id="precio" name="precio" required><br>
+    
+        <label for="iva">IVA:</label>
+        <select id="iva" name="iva">
+            <option value="0.10">Reducido (10%)</option>
+            <option value="0.21">Normal (21%)</option>
+        </select><br>
+    
+        <label for="resultado">Precio con IVA (€):</label>
+        <input type="text" id="resultado" name="resultado" readonly><br>
+    
+        <button type="button" onclick="calcularIVA()">Calcular</button>
+    </form>
+
+    
+</body>
+</html>

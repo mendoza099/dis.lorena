@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje al Profesor</title>
+    <script>
+        function verificarColor() {
+            const colores = ["azul", "verde", "rojo", "naranja", "rosa", "marrón"];
+            const colorPensado = colores[Math.floor(Math.random() * colores.length)];
+            const colorElegido = document.getElementById('color').value;
+    
+            if (colorElegido === colorPensado) {
+                alert("¡Has acertado!");
+                return true; 
+            } else {
+                alert("Lo siento, el color era: " + colorPensado + ". Intenta de nuevo.");
+                return false; 
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Juego: Adivina el Color</h1>
+
+    <form method="GET" action="procesar.php" onsubmit="return verificarColor();">
+        <label for="color">Adivina el color:</label>
+        <select name="color" id="color">
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="rojo">Rojo</option>
+            <option value="naranja">Naranja</option>
+            <option value="rosa">Rosa</option>
+            <option value="marrón">Marrón</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

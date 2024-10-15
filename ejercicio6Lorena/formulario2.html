@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos1.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="URL_DEL_SERVIDOR">
+        
+            <legend>Acceso a la aplicación</legend>
+            <br>
+            <label for="nombre">nombre de acceso:</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" maxlength="40" required placeholder="nombre de acceso:" required>
+            <br>
+            
+            <label for="apellido">apellido</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" maxlength="60" required placeholder="nombre de acceso:" required>
+            <br>
+            <label for="edad">Edad</label>
+            <br>
+            <input type="number" id="edad" name="edad" required min="18" max="90">
+            <br>
+            <label for="email">Correo Electrónico:</label>
+            <br>
+            <input type="email" id="email" name="email" maxlength="20" required placeholder="Escribe tu correo electrónico" required>
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" required>
+            <br>
+            <label >Sexo :</label>
+            <br>
+            <input type="radio" value="Hombre" id="sexo1" name="sexo"  required>
+            <label for="sexo">Hombre</label>
+            <input type="radio" value="Mujer" id="sexo2" name="sexo" required>
+            <label for="sexo">Mujer</label>
+            <input type="radio" value="otro" value="otro" id="sexo3" name="sexo" required>
+            <label for="sexo">Otro</label>
+            <br>
+           <label for="Dispositivos">Dispositivos</label>
+           <br>
+          <select name="Dispositivos " id="Dispositivos ">
+                <option value="Macbook">Macbook</option>
+                <option value="iPhone">iPhone</option>
+                <option value="Ipad">Ipad</option>
+
+
+          </select>
+          <br>
+          <label >Como nos conociste :</label>
+          <br>
+          <input type="radio" value="red social" value="otro" id="Como1" name="sexo" >
+          <label for="Como">red social</label>
+          <input type="radio" value="Mujer"value="otro"  id="Como2" name="sexo" >
+          <label for="Como">buscador </label>
+          <input type="radio" value="otro" value="otro" id="Como3" name="sexo">
+          <label for="Como">amigos </label>
+          <input type="radio" value="otro" value="otro" id="Como3" name="sexo">
+          <label for="Como">Otro</label>
+          
+
+          <br>
+          <input type="checkbox" id="texto" name="texto" checked>
+
+          <label for="texto">Cláusula de suscripción: Deseo subscribirne a la lista de correo</label>
+
+          <br>
+       <br>
+       <button>Contactar</button>
+       
+    </form>
+</body>
+</html>
