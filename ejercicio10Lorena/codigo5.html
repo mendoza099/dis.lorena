@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres en UTF-8 para que se muestren correctamente caracteres especiales como acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el contenido de la página se adapte al ancho del dispositivo, importante para pantallas móviles -->
+    <title>Ciclos de Vida del Software</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Usa la fuente Arial, y si no está disponible, usa una fuente sans-serif */
+            margin: 20px;
+            /* Establece un margen de 20px alrededor del cuerpo del documento */
+            background-color: #f4f4f4;
+            /* Aplica un color de fondo gris claro */
+            color: #333;
+            /* Establece el color del texto en gris oscuro */
+            line-height: 1.6;
+            /* Aumenta el espacio entre líneas del texto a 1.6 para mejorar la legibilidad */
+            text-align: justify;
+            /* Alinea el texto de manera justificada (alineado a ambos lados) */
+        }
+
+        h1 {
+            text-align: center;
+            /* Centra el título principal horizontalmente */
+            color: #005f73;
+            /* Cambia el color del título a un azul oscuro */
+            text-transform: uppercase;
+            /* Transforma todas las letras del título a mayúsculas */
+            letter-spacing: 2px;
+            /* Añade un espacio adicional de 2px entre las letras del título */
+            text-decoration: underline;
+            /* Subraya el texto del título */
+        }
+
+        .container {
+            width: 80%;
+            /* El contenedor ocupa el 80% del ancho disponible */
+            margin: 0 auto;
+            /* Centra el contenedor horizontalmente */
+            background-color: #fff;
+            /* Aplica un fondo blanco al contenedor */
+            padding: 20px;
+            /* Añade un relleno interno de 20px dentro del contenedor */
+            border-radius: 10px;
+            /* Redondea las esquinas del contenedor con un radio de 10px */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Aplica una sombra sutil alrededor del contenedor para dar profundidad */
+        }
+
+        h2 {
+            color: #0a9396;
+            /* Aplica un color verde azulado a los subtítulos */
+            text-align: left;
+            /* Alinea el texto del subtítulo a la izquierda */
+            text-indent: 20px;
+            /* Crea una sangría de 20px en la primera línea del subtítulo */
+            text-decoration: overline;
+            /* Añade una línea sobre el texto del subtítulo */
+            text-transform: capitalize;
+            /* Capitaliza la primera letra de cada palabra en los subtítulos */
+        }
+
+        p {
+            line-height: 1.8;
+            /* Aumenta el espacio entre líneas de los párrafos a 1.8 */
+            text-indent: 20px;
+            /* Aplica una sangría de 20px a la primera línea de cada párrafo */
+            letter-spacing: 1px;
+            /* Añade 1px de espacio extra entre las letras de los párrafos */
+            word-spacing: 2px;
+            /* Añade 2px de espacio extra entre las palabras de los párrafos */
+        }
+
+        table {
+            width: 100%;
+            /* La tabla ocupa el 100% del ancho disponible */
+            border-collapse: collapse;
+            /* Elimina los espacios entre las celdas de la tabla */
+            margin-top: 20px;
+            /* Añade un margen superior de 20px para separar la tabla del contenido anterior */
+            text-align: left;
+            /* Alinea el contenido de las celdas a la izquierda */
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            /* Aplica un borde de 1px y color gris claro a la tabla, las celdas de encabezado y las celdas de contenido */
+        }
+
+        th, td {
+            padding: 10px;
+            /* Añade un relleno interno de 10px a las celdas de encabezado y contenido */
+            text-align: left;
+            /* Alinea el texto de las celdas a la izquierda */
+            vertical-align: middle;
+            /* Centra verticalmente el contenido de las celdas */
+        }
+
+        th {
+            background-color: #94d2bd;
+            /* Aplica un color de fondo verde claro a las celdas de encabezado */
+            letter-spacing: 1px;
+            /* Añade 1px de espacio entre letras en las celdas de encabezado */
+            text-transform: uppercase;
+            /* Transforma el texto de las celdas de encabezado a mayúsculas */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+            /* Aplica un fondo gris claro a las filas pares de la tabla */
+        }
+
+        tr:hover {
+            background-color: #e0f7fa;
+            /* Cambia el color de fondo a azul claro cuando el ratón pasa sobre una fila */
+        }
+
+        .highlight {
+            text-decoration: line-through;
+            /* Aplica un tachado al texto que tenga esta clase */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Contenedor principal del contenido de la página -->
+        <h1>Ciclos de Vida del Software</h1>
+        <!-- Título principal de la página -->
+
+        <h2>1. Modelo en Cascada</h2>
+        <!-- Subtítulo del primer modelo de ciclo de vida del software -->
+        <p>El <span class="highlight">modelo en cascada</span> es un enfoque secuencial de desarrollo de software. Cada fase debe completarse antes de que comience la siguiente, lo que hace que sea sencillo y estructurado, pero rígido y poco flexible.</p>
+        <!-- Párrafo que describe el modelo en cascada. Se aplica un tachado a "modelo en cascada" con la clase .highlight -->
+
+        <h2>2. Modelo Iterativo</h2>
+        <!-- Subtítulo del segundo modelo de ciclo de vida del software -->
+        <p>El modelo iterativo permite volver a fases anteriores del ciclo de vida a medida que se aprende más sobre los requisitos y las funcionalidades. Es útil cuando los requisitos no están completamente definidos desde el principio.</p>
+        <!-- Descripción del modelo iterativo -->
+
+        <h2>3. Modelo de Desarrollo Incremental</h2>
+        <!-- Subtítulo del tercer modelo de ciclo de vida del software -->
+        <p>Este modelo divide el desarrollo en incrementos o versiones pequeñas del software. Cada versión añade nuevas funcionalidades hasta que se completa el sistema. Esto permite ver resultados rápidos y obtener retroalimentación constante.</p>
+        <!-- Descripción del modelo de desarrollo incremental -->
+
+        <h2>4. Modelo en Espiral</h2>
+        <!-- Subtítulo del cuarto modelo de ciclo de vida del software -->
+        <p>El modelo en espiral combina elementos de los modelos iterativo y de cascada, pero enfatiza el análisis de riesgos. Se organiza en ciclos o "espirales", donde cada ciclo agrega funcionalidad y gestiona riesgos potenciales.</p>
+        <!-- Descripción del modelo en espiral -->
+
+        <h2>5. Modelo de Prototipos</h2>
+        <!-- Subtítulo del quinto modelo de ciclo de vida del software -->
+        <p>En este modelo se crean prototipos funcionales que representan partes clave del sistema para que los usuarios puedan interactuar con él y proporcionar retroalimentación temprana. Esto permite mejorar los requisitos antes del desarrollo completo.</p>
+        <!-- Descripción del modelo de prototipos -->
+
+        <h2>Comparación de los Modelos</h2>
+        <!-- Subtítulo para la tabla comparativa -->
+
+        <table>
+            <!-- Tabla que compara los diferentes modelos de ciclo de vida del software -->
+            <tr>
+                <th>Modelo</th>
+                <th>Características</th>
+                <th>Ventajas</th>
+                <th>Desventajas</th>
+            </tr>
+            <tr>
+                <td>Cascada</td>
+                <td>Secuencial, estructurado.</td>
+                <td>Simplicidad, fácil de entender.</td>
+                <td>Poco flexible, difícil de adaptar.</td>
+            </tr>
+            <tr>
+                <td>Iterativo</td>
+                <td>Repetición de fases.</td>
+                <td>Adaptabilidad, permite ajustes.</td>
+                <td>Complejidad en la gestión.</td>
+            </tr>
+            <tr>
+                <td>Incremental</td>
+                <td>Desarrollo en partes pequeñas.</td>
+                <td>Retroalimentación rápida.</td>
+                <td>Puedes necesitar cambios grandes si la planificación inicial falla.</td>
+            </tr>
+            <tr>
+                <td>Espiral</td>
+                <td>Orientado a la gestión de riesgos.</td>
+                <td>Minimiza riesgos, alta adaptabilidad.</td>
+                <td>Caro y complejo de gestionar.</td>
+            </tr>
+            <tr>
+                <td>Prototipos</td>
+                <td>Desarrollo basado en prototipos.</td>
+                <td>Mejor definición de requisitos, mejora la experiencia del usuario.</td>
+                <td>Puedes generar malentendidos si los prototipos no representan el producto final.</td>
+            </tr>
+        </table>
+        <!-- Tabla comparativa que incluye los cinco modelos, sus características, ventajas y desventajas -->
+    </div>
+
+</body>
+</html>

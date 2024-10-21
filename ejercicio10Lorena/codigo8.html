@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Estilos de Tabla</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Familia de fuentes */
+            margin: 20px; /* Margen alrededor del contenido */
+            color: #333; /* Color del texto */
+            background-color: #f4f4f4; /* Color de fondo */
+        }
+
+        h1 {
+            font-weight: 700; /* Negrita */
+            font-size: 2.5em; /* Tamaño de fuente mayor */
+            color: #0056b3; /* Color del encabezado */
+        }
+
+        table {
+            width: 100%; /* Ancho de la tabla */
+            border-collapse: collapse; /* Colapsar bordes */
+            table-layout: fixed; /* Formato de celdas fijo */
+        }
+
+        caption {
+            caption-side: top; /* Posición del título de la tabla */
+            font-weight: bold; /* Negrita */
+            font-size: 1.5em; /* Tamaño de fuente mayor */
+            margin-bottom: 10px; /* Margen inferior */
+        }
+
+        th, td {
+            border: 2px solid #0056b3; /* Bordes de celdas */
+            padding: 10px; /* Espaciado interno */
+            text-align: left; /* Alinear texto a la izquierda */
+        }
+
+        tr:nth-child(even) {
+            background-color: #e9ecef; /* Color de fondo para filas pares */
+        }
+
+        tr:hover {
+            background-color: #d1e7dd; /* Color de fondo al pasar el mouse */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Tabla en HTML</h1>
+    
+    <table>
+        <caption>Datos de Ejemplo</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alicia</td>
+                <td>30</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>25</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>22</td>
+                <td>Valencia</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

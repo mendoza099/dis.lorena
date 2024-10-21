@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Estilos de Lista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Familia de fuentes */
+            margin: 20px; /* Margen alrededor del contenido */
+            color: #333; /* Color del texto */
+            background-color: #f4f4f4; /* Color de fondo */
+        }
+
+        h1 {
+            font-weight: 700; /* Negrita */
+            font-size: 2.5em; /* Tamaño de fuente mayor */
+            color: #0056b3; /* Color del encabezado */
+        }
+
+        h2 {
+            font-weight: 600; /* Semi-negrita */
+            font-size: 2em; /* Tamaño de fuente grande */
+            margin-top: 20px; /* Margen superior */
+        }
+
+        ul {
+            list-style-type: square; /* Estilo de marcadores de lista */
+            padding-left: 20px; /* Espacio a la izquierda */
+        }
+
+        ol {
+            list-style-type: lower-alpha; /* Estilo de marcadores numéricos */
+            padding-left: 20px; /* Espacio a la izquierda */
+        }
+
+        .custom-list {
+            list-style-image: url('https://example.com/mi-imagen.png'); /* Imagen para los marcadores */
+            list-style-position: inside; /* Marcador dentro de la lista */
+            margin: 10px 0; /* Margen para la lista personalizada */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Estilos de Lista en HTML</h1>
+    
+    <h2>Lista No Ordenada</h2>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ol>
+
+    <h2>Lista Personalizada</h2>
+    <ul class="custom-list">
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+    </ul>
+
+</body>
+</html>
