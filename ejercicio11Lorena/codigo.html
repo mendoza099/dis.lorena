@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Clase 2018-2019</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: green;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        /* Pseudo-selectores para la columna de horas */
+        td.horas {
+            background-color: green;
+            text-align: left;        }
+        /* Pseudo-selectores para la fila de recreo */
+        tr.recreo {
+            background-color: yellow;
+        }
+        /* Cambiar los estados de los enlaces */
+        a {
+            text-decoration: none;
+        }
+        a:visited {
+            color: red;
+        }
+        a:link {
+            color: green;
+        }
+        /* Aumentar tamaño de fuente al pasar sobre la columna del viernes */
+        td:nth-child(6):hover {
+            font-size: 200%;
+        }
+        /* Pseudoelemento: la primera letra de los días en la cabecera en grande */
+        th:first-letter {
+            font-size: 200%;
+        }
+        label {
+            font-weight: bold;
+        }
+        .email-section {
+            margin-top: 10px;
+        }
+        input[type="email"] {
+            width: 300px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 5px 15px;
+            background-color: lightgrey;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HORARIO DE CLASE CURSO 2018-2019</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>HORAS</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="horas">8:00</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+            </tr>
+            <tr>
+                <td class="horas">9:00</td>
+                <td>Matemáticas</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+            </tr>
+            <tr class="recreo">
+                <td class="horas">10:00</td>
+                <td colspan="5">RECREO</td>
+            </tr>
+            <tr>
+                <td class="horas">10:30</td>
+                <td>Inglés</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Historia</td>
+            </tr>
+            <tr>
+                <td class="horas">11:30</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Matemáticas</td>
+                <td>Inglés</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="email-section">
+        <label for="email">Email*</label><br>
+        <input type="email" id="email" name="email" placeholder="Inserte email del destinatario" required>
+        <br>
+        <br>
+        <input type="submit" value="Enviar Horario">
+    </div>
+
+</body>
+</html>
