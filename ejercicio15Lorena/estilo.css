@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colocamos la imagen en la parte superior */
+.imagenmiel {
+    position: absolute;
+    top: -130px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://res.cloudinary.com/dq8kckqtc/image/upload/v1731091370/yellow-pattern-with-honeycomb-and-honey-drips-dripping-honey-seamless-pattern-gold-honey-hexagonal-cells-seamless-texture-illustration-vector-removebg-preview_1_ffs0y8.png');
+    background-repeat: repeat-x; /* Repite la imagen a lo largo del eje horizontal */
+    background-size: auto 70%; /* Ajusta el alto de la imagen al 100% y el ancho se ajustará automáticamente */
+    z-index: 998; /* Asegura que esté por encima de las tarjetas, pero por debajo del menú y el logo */
+    pointer-events: none; /* Evita que la imagen interfiera con los clics */
+}
+
+/* Otros estilos de body y tarjetas quedan igual */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbc237;
+    overflow: hidden;
+    position: relative; /* Necesario para posicionar elementos absolutos */
+}
+
+
+/* Ajustes del body y otros elementos, ya no necesitamos cambios aquí */
+
+
+h1 {
+font-family: 'Dancing Script';
+}
+
+/* Estilo para el logo */
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001; /* Un nivel más alto que el menú */
+}
+
+.logo-img {
+    width: 90px;
+    height: auto;
+}
+
+/* Estilo para el menú */
+.main-menu {
+    width: 210px;
+    height: 100vh;
+    background-color: #fcb535;
+    z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.main-menu li {
+    padding: 9px;
+    color: white;
+}
+
+.main-menu li a {
+    color: #f6f0f0;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+
+.main-menu li a:hover {
+    color: #f6f0f0;
+    background-color: #000;
+}
+
+.fa {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Ajuste del contenedor principal para no sobrepasar el menú */
+.container {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #fbc237;
+    padding: 20px;
+}
+
+.card, .card1, .card2 {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative; /* Posicionamiento relativo para el contenedor */
+    box-shadow: 0 5px 10px #000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.a {
+    grid-column: 1 / span 2;
+    height: 52vh;
+}
+
+.b {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    height: 87vh;
+}
+
+.c {
+    grid-column: 1;
+    grid-row: 2;
+    height: 28vh;
+}
+
+.d {
+    grid-column: 2;
+    grid-row: 2;
+    height: 28vh;
+}
+
+/* Animación del cuerpo de la tarjeta */
+.card-body, .card1-body, .card2-body {
+    position: absolute;
+    top: 0;
+    right: -100%; /* Empezamos fuera de la tarjeta */
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 61, 71, 0.22);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: right 1.7s ease-out; /* Cambiamos el tiempo de la animación */
+    border-radius: 20px;
+}
+
+.card:hover .card-body, .card1:hover .card1-body, .card2:hover .card2-body {
+    right: 0; /* Al pasar el ratón, el contenido entra */
+}
+
+/* Títulos y descripciones */
+.card-title, .card1-title, .card2-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-info, .card1-info, .card2-info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+/* Estilos de la imagen */
+.card-image, .card1-image, .card2-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Efecto de transición para las imágenes */
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); /* Sombra hacia adentro */
+
+}
+
+.card:hover .card-image, .card1:hover .card1-image, .card2:hover .card2-image {
+    transform: scale(1.05); /* Efecto de zoom en la imagen al pasar el ratón */
+}
